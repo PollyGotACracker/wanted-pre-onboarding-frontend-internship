@@ -1,0 +1,24 @@
+{
+  "name": "wanted-pre-onboarding-frontend-internship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "husky install",
+    "format": "prettier --write --cache .",
+    "lint": "eslint --cache .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8"
+  },
+  "dependencies": {
+    "uri-js": "^4.4.1"
+  }
+}
