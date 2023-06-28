@@ -35,10 +35,6 @@ module.exports = {
   // 기본값 true
   bracketSpacing: true,
 
-  // HTML, JSX, Vue, Angular 등 마지막 `>`를 줄바꿈 하지 않을지 여부
-  // 기본값 false(다음 줄로 줄바꿈)
-  jsxBracketSameLine: true,
-
   // 화살표 함수의 매개변수가 하나일 때 소괄호로 감쌀지 여부
   // "always": 항상 괄호 포함 (기본값)
   // "avoid": 가능하면 생략
