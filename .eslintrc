@@ -3,26 +3,46 @@
     "browser": true,
     "es2021": true
   },
-  // "extends": "eslint:recommended",
-  // "overrides": [
-  //   {
-  //     "env": {
-  //       "node": true
-  //     },
-  //     "files": [".eslintrc.{js,cjs}"],
-  //     "parserOptions": {
-  //       "sourceType": "script"
-  //     }
-  //   }
-  // ],
+  "extends": [
+    "plugin:react/recommended",
+    // "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  // "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  // "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks"],
   "rules": {
-    "indent": ["error", "tab"],
-    "linebreak-style": ["error", "windows"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"]
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    // "@typescript-eslint/explicit-function-return-type": "off",
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [
+      2,
+      // { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+      { "extensions": [".js", ".jsx"] }
+    ],
+    "import/extensions": ["off"],
+    "react/display-name": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        // "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "extensions": [".js", ".jsx"],
+        // "moduleDirectory": ["node_modules", "@types"]
+        "moduleDirectory": ["node_modules"]
+      }
+      // "typescript": {}
+    },
+    "react": {
+      "version": "detect"
+    }
   }
 }
