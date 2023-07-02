@@ -90,15 +90,15 @@ aws --version
 1. 루트가 아닌 IAM 계정으로 로그인해야 한다. 우측 상단의 내 닉네임을 클릭하고 '계정' 메뉴로 들어간다.
 2. '결제 정보에 대한 IAM 사용자 및 역할 액세스정보' 항목에서 IAM 액세스 활성화 를 체크한 후 저장한다.
 3. 검색 창에 IAM 을 입력 후 들어가면, 왼쪽 메뉴에 '사용자' 를 클릭하고 '사용자 추가' 버튼을 클릭한다.
-4. 사용자 이름은 Administrator 등 원하는 이름, 'AWS Management Console에 대한 사용자 액세스 권한 제공' 에 체크
-   4.1. 'IAM 사용자를 생성하고 싶음' 체크
-   4.2. 사용자 지정 암호 입력
-   4.3. 'Users must create a new password at next sign-in - Recommended' 체크 해제. 다음 버튼 클릭
-   4.4. 그룹에 사용자 추가 탭에서 '그룹 생성' 버튼 클릭
-   4.5. 그룹 이름은 'Administrators', 아래 목록에서 'AdministratorAccess' 를 찾아 체크 후 '사용자 그룹 생성' 버튼 클릭
-   4.6. 생성된 그룹을 체크하고 다음 버튼 클릭
-   4.7. 추가할 태그가 있다면 추가하고 '사용자 생성' 버튼 클릭
-   4.8. 생성이 완료되면 csv 파일을 다운로드 하거나 이메일 전송 버튼을 클릭
+4. 사용자 이름은 Administrator 등 원하는 이름, 'AWS Management Console에 대한 사용자 액세스 권한 제공' 에 체크  
+   4.1. 'IAM 사용자를 생성하고 싶음' 체크  
+   4.2. 사용자 지정 암호 입력  
+   4.3. 'Users must create a new password at next sign-in - Recommended' 체크 해제. 다음 버튼 클릭  
+   4.4. 그룹에 사용자 추가 탭에서 '그룹 생성' 버튼 클릭  
+   4.5. 그룹 이름은 'Administrators', 아래 목록에서 'AdministratorAccess' 를 찾아 체크 후 '사용자 그룹 생성' 버튼 클릭  
+   4.6. 생성된 그룹을 체크하고 다음 버튼 클릭  
+   4.7. 추가할 태그가 있다면 추가하고 '사용자 생성' 버튼 클릭  
+   4.8. 생성이 완료되면 csv 파일을 다운로드 하거나 이메일 전송 버튼을 클릭  
    4.9. 로그인 URL 에서 계정 ID 12자리 숫자를 확인
 5. IAM 계정으로 로그인 후, AWS 콘솔에서 우측 상단의 사용자 이름을 클릭하고 '보안 자격 증명' 메뉴로 들어간다.
 6. '액세스 키' 항목에서 '액세스 키 만들기' 버튼을 클릭한다.
@@ -108,7 +108,7 @@ aws --version
 10. 페이지를 벗어나면 비밀 액세스 키를 다시 볼 수 없으므로 csv 파일로 다운로드 하거나 별도로 메모해둔다.
 
 > - !! Secret Access Key의 / 또는 % 등 특수문자가 포함되어 있을 때 키를 재생성 할 것 !!
-> - GitHub Actions 에서 depoly 시 SignatureDoesNotMatch 오류가 발생하는 원인이 된다.
+> - GitHub Actions 에서 deploy 시 SignatureDoesNotMatch 오류가 발생하는 원인이 된다.
 
 - 터미널에서 액세스 키를 설정한다.
 - `--profile` 옵션: 별명을 지정할 수 있다. 옵션이 없다면 default 로 설정되므로 필요한 경우에만 지정하도록 한다.

@@ -11,16 +11,16 @@
 title: GitHub Actions 의 구성 요소들
 ---
 flowchart LR
-    id(Event):::eventclass o--o runner1["`Runner1
+    id(Event):::eventclass o--o runner1["Runner1
     Job1:
     step 1: Run action
     step 2: Run script
     step 3: Run script
-    step 4: Run action`"] o--o runner2["`Runner2
+    step 4: Run action"] o--o runner2["Runner2
     Job2:
     step 1: Run action
     step 2: Run script
-    step 3: Run script`"]
+    step 3: Run script"]
     classDef eventclass fill:#32527b,color:#fff,stroke:#333,stroke-width:4px
 ```
 

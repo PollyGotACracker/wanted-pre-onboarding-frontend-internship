@@ -43,9 +43,7 @@
   - 애플리케이션 설치 불필요, 서비스를 활용하기 위한 소프트웨어 제공
   - e.g. DropBox, iCloud, Netflix, Google Apps, Slack
 
-```
-    * Serverless(Function as a Service)
-        - 함수 등록 외의 관리 필요성이 없어 마치 서버가 없는 것과 같은 서비스
-        - 함수 코드를 Service Cloud Provider 에 올리면, 요청이 올 때 응답을 준다
-        - e.g. AWS Lambda
-```
+> - Serverless(Function as a Service)
+>   - 함수 등록 외의 관리 필요성이 없어 마치 서버가 없는 것과 같은 서비스
+>   - 함수 코드를 Service Cloud Provider 에 올리면, 요청이 올 때 응답을 준다
+>   - e.g. AWS Lambda

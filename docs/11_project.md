@@ -50,7 +50,7 @@
 5. 규칙성이 없는 코드의 포멧팅 및 변수명
 
    - 프로젝트를 처음 보는 사람이 읽고 이해하기 쉬워야 한다.
-   - x, y, info, data, foo, bar, baz, i, j, k 같은 변수명은 지양한다.
+   - `x`, `y`, `info`, `data`, `foo`, `bar`, `baz`, `i`, `j`, `k` 같은 변수명은 지양한다.
 
 6. 관리되지 않은 Git(commit history, branch)
 
