@@ -60,7 +60,7 @@
 
 - 목적: Context API 는 props 전달을 용이하게 하려는 목적으로 사용되며, Custom Hook 은 로직 분리를 위해 사용된다.
 - state: Context API 나 Custom Hook 에서 state 변수를 사용할 경우,  
-  Context API 는 전역 상태를 관리할 수 있지만 Custom Hook 은 hook 을 사용하는 컴포넌트 별로 각자 다른 상태이다.
+  Context API 는 전역 상태를 관리할 수 있지만 _Custom Hook 은 사용하는 컴포넌트마다 각자 다른 상태 값을 가진다_.
 - Context API 에 Custom Hook 을 포함하는 등 복합적으로 사용할 수 있다.
 
 ## Clean Code

@@ -104,12 +104,13 @@ fetch("todos", {
   - Class 의 constructor(인스턴스 생성)
   - 함수의 parameter
   - :pushpin: React 에서 Context API 사용:  
-    index.js 에서 Class 모듈의 인스턴스 생성 후, App 컴포넌트를 감싸는 Provider 에 해당 인스턴스를 인수로 보냄
+    index.js 에서 Class 모듈들의 인스턴스 생성 후, App 컴포넌트를 감싸는 Context `Provider` 가 해당 인스턴스를 인자로 받음  
+    이렇게 하면 index.js 에서 bootstrapping 과정이 이루어지므로 모듈의 연관 관계를 파악하기 쉽고, 유지보수 및 테스트 코드 작성이 수월해짐
 - 프로그램 유연성, 테스트 용이성, mocking 등을 쉽게 활용할 수 있게 된다.
   - mocking: 외부 서비스에 의존하는 부분을 가짜로 대체하여 독립적으로 실행 가능한 단위 테스트를 작성하기 위해 사용되는 테스트 기법
 
 ## 컴포넌트의 `children`
 
-- :pushpin: `children` 은 자식 컴포넌트가 아니라 props 이다.
-- 부모 컴포넌트에서 리렌더링이 일어날 때 자식 컴포넌트는 자신의 변경 여부와 상관없이 무조건 리렌더링 되는 반면, props 의 경우 값이 변경되지 않으면 리렌더링이 발생하지 않는다.
-- 따라서 Context API 에서 `children` 을 사용할 때 리렌더링을 줄일 수 있다.
+- :pushpin: 다른 컴포넌트를 nesting 하면 자식 컴포넌트인 것과 달리, `children` 은 자식 컴포넌트가 아니라 props 이다.
+- 부모 컴포넌트에서 리렌더링이 일어날 때 자식 컴포넌트는 자신의 변경 여부와 상관없이 무조건 리렌더링 되는 반면, props 인 `children` 의 경우 값이 변경되지 않는다면 리렌더링이 발생하지 않는다.
+- 따라서 Context API 에서 `children` 을 사용할 때 합성 컴포넌트에서의 리렌더링과 props drilling 을 줄일 수 있다.
